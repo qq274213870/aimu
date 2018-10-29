@@ -1,0 +1,24 @@
+server:
+  port: 2001
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #MySql\u914D\u7F6E
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/aimu?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 429602
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: rbac-client
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+
+
+
